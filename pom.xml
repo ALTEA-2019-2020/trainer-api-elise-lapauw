@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.miage.altea</groupId>
-    <artifactId>trainer-api</artifactId>
+    <artifactId>trainer-api-elise-lapauw</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 
