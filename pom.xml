@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.miage.altea</groupId>
-    <artifactId>trainer-api-ramusluk</artifactId>
+    <artifactId>trainer-api</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 
@@ -48,6 +48,11 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
     </dependencies>
