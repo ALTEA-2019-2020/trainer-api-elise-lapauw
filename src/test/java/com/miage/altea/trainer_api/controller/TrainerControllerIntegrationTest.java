@@ -34,20 +34,9 @@ class TrainerControllerIntegrationTest {
         assertNotNull(controller);
     }
 
-  /*  @Test
-    void getTrainer_withNameAsh_shouldReturnAsh() {
-        var ash = this.restTemplate.getForObject("http://localhost:" + port + "/trainers/Ash", Trainer.class);
-        assertNotNull(ash);
-        assertEquals("Ash", ash.getName());
-        assertEquals(1, ash.getTeam().size());
-
-        assertEquals(25, ash.getTeam().get(0).getPokemonTypeId());
-        assertEquals(18, ash.getTeam().get(0).getLevel());
-    }*/
-
     @Test
     void getAllTrainers_shouldReturnAshAndMisty() {
-        var trainers = this.restTemplate.getForObject("http://localhost:" + port + "/trainers/", Trainer[].class);
+        var trainers = this.restTemplate.withBasicAuth(username, password).getForObject("http://localhost:" + port + "/trainers/", Trainer[].class);
         assertNotNull(trainers);
         assertEquals(2, trainers.length);
 
