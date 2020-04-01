@@ -22,6 +22,16 @@ public class TrainerServiceImpl implements TrainerService {
 
     @Override
     public Trainer getTrainer(String name) {
-        return trainerRepository.findById(name).orElse(null);
+        return  trainerRepository.findById(name).orElse(null);
+    }
+
+    @Override
+    public Trainer createTrainer(Trainer trainer) {
+        return trainerRepository.save(trainer);
+    }
+
+    @Override
+    public void deleteTrainer(String name){
+        this.trainerRepository.deleteById(name);
     }
 }
