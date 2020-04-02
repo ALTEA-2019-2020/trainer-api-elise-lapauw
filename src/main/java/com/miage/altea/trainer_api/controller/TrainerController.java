@@ -27,7 +27,7 @@ public class TrainerController {
 
     @PutMapping()
     Trainer updateTrainer(@RequestBody Trainer trainer) {
-        return this.trainerService.createTrainer(trainer);
+        return this.trainerService.updateTrainer(trainer);
     }
     @PostMapping()
     Trainer newTrainer(@RequestBody Trainer trainer) {
