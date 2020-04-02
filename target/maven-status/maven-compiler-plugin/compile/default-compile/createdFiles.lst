@@ -1,7 +1,0 @@
-com\miage\altea\trainer_api\bo\Trainer.class
-com\miage\altea\trainer_api\repository\TrainerRepository.class
-com\miage\altea\trainer_api\service\TrainerServiceImpl.class
-com\miage\altea\trainer_api\TrainerApi.class
-com\miage\altea\trainer_api\service\TrainerService.class
-com\miage\altea\trainer_api\bo\Pokemon.class
-com\miage\altea\trainer_api\controller\TrainerController.class
