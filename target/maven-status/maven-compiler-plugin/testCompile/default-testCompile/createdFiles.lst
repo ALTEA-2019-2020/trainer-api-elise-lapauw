@@ -1,0 +1,6 @@
+com\miage\altea\trainer_api\bo\PokemonTest.class
+com\miage\altea\trainer_api\bo\TrainerTest.class
+com\miage\altea\trainer_api\repository\TrainerRepositoryTest.class
+com\miage\altea\trainer_api\service\TrainerServiceImplTest.class
+com\miage\altea\trainer_api\controller\TrainerControllerIntegrationTest.class
+com\miage\altea\trainer_api\controller\TrainerControllerTest.class

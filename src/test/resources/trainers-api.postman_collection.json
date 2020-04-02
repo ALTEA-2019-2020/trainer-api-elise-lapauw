@@ -29,6 +29,7 @@
 				}
 			],
 			"request": {
+<<<<<<< HEAD
 				"auth": {
 					"type": "basic",
 					"basic": [
@@ -44,6 +45,8 @@
 						}
 					]
 				},
+=======
+>>>>>>> 30e585a4c41013ffa5ebe2bb01f42ebaedfdb280
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -80,6 +83,7 @@
 				}
 			],
 			"request": {
+<<<<<<< HEAD
 				"auth": {
 					"type": "basic",
 					"basic": [
@@ -95,6 +99,8 @@
 						}
 					]
 				},
+=======
+>>>>>>> 30e585a4c41013ffa5ebe2bb01f42ebaedfdb280
 				"method": "GET",
 				"header": [],
 				"url": {
