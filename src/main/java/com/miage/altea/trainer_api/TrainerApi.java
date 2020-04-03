@@ -36,9 +36,15 @@ public class TrainerApi {
             misty.setTeam(List.of(staryu, starmie));
             misty.setPassword(bCryptPasswordEncoder.encode("misty_password"));
 
+            var elise = new Trainer("Elise");
+            var gyarados = new Pokemon(130, 22);
+            elise.setTeam(List.of(gyarados));
+            elise.setPassword(bCryptPasswordEncoder.encode("elise_password"));
+
             // save a couple of trainers
             repository.save(ash);
             repository.save(misty);
+            repository.save(elise);
         };
     }
 

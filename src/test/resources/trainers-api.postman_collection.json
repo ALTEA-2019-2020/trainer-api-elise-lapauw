@@ -29,7 +29,6 @@
 				}
 			],
 			"request": {
-<<<<<<< HEAD
 				"auth": {
 					"type": "basic",
 					"basic": [
@@ -45,8 +44,6 @@
 						}
 					]
 				},
-=======
->>>>>>> 30e585a4c41013ffa5ebe2bb01f42ebaedfdb280
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -83,7 +80,6 @@
 				}
 			],
 			"request": {
-<<<<<<< HEAD
 				"auth": {
 					"type": "basic",
 					"basic": [
@@ -99,8 +95,6 @@
 						}
 					]
 				},
-=======
->>>>>>> 30e585a4c41013ffa5ebe2bb01f42ebaedfdb280
 				"method": "GET",
 				"header": [],
 				"url": {
@@ -114,6 +108,66 @@
 					"path": [
 						"trainers",
 						"Ash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-trainer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Elise\",\n  \"password\": \"elise_password\",\n  \"team\": [\n    {\"pokemonTypeId\": 130, \"level\": 22}\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://lapauw-trainer-api.herokuapp.com/trainers",
+					"protocol": "https",
+					"host": [
+						"lapauw-trainer-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-trainer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Elise\",\n  \"password\": \"elise_password\",\n  \"team\": [\n    {\"pokemonTypeId\": 130, \"level\": 22},\n    {\"pokemonTypeId\": 6, \"level\":12}\n  ]\n}"
+				},
+				"url": {
+					"raw": "https://lapauw-trainer-api.herokuapp.com/trainers",
+					"protocol": "https",
+					"host": [
+						"lapauw-trainer-api",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"trainers"
 					]
 				}
 			},

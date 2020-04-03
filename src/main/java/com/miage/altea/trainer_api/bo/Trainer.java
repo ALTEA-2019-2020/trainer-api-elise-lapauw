@@ -1,15 +1,14 @@
 package com.miage.altea.trainer_api.bo;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Entity
 public class Trainer {
 
     @Id
+    @Column(name="name", unique=true)
     private String name;
 
     @ElementCollection
