@@ -10,6 +10,7 @@ Launch
 -------------------------
 The application is available at 
 https://lapauw-trainer-api.herokuapp.com/
+
 Or you can launch it and use
 http://localhost:8081/
 
@@ -22,6 +23,8 @@ This application contains the following routes :
  - PUT / trainers -> updates a trainer
  - POST /trainers -> creates a new trainer
  - DELETE /trainers/{name} -> deletes the trainer named {name}
+
+A postman collection is available in the src/test/resources folder
 
 The app needs a username and a password detailed in application.properties file.
 spring.security.user.name=lapauw  
